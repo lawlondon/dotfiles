@@ -3,6 +3,6 @@
 !.gitignore
 !.config/
 !.config/kitty/
-!.config/kitty/**/*
+!.config/kitty/**
 !.config/nixos/
-!.config/nixos/**/*
+!.config/nixos/**
