@@ -1,8 +1,8 @@
 *
-!.config/*
-!.config/kitty/
-!.config/kitty/**
-!.config/nixos/
-!.config/nixos/**
-!.gitignore
 !.zshrc
+!.gitignore
+!.config/
+!.config/kitty/
+!.config/kitty/**/*
+!.config/nixos/
+!.config/nixos/**/*
