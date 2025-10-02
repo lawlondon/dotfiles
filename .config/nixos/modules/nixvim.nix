@@ -15,7 +15,12 @@ in
 
   programs.nixvim = {
     enable = true;
-    colorschemes.catppuccin.enable = true;
+    colorschemes.monokai-pro = {
+	enable = true;
+	settings = {
+	    filter = "octagon";
+	    devicons = true; };
+	};
     
     plugins.treesitter = {
       enable = true;
