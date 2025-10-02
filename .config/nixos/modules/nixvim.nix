@@ -68,8 +68,11 @@ in
     { name = "nvim_lsp"; }
     { name = "path"; }
     { name = "buffer"; }
+    { name = "cmdline"; }
   ];
     };
+
+    plugins.cmp-cmdline.enable = true;
 
     opts = {
       number = true;
@@ -78,7 +81,6 @@ in
       cursorline = true;
       scrolloff = 10;
       breakindent = true;
-      signcolumn = true;
       list = true;
       termguicolors = true;
       mouse = "a";
