@@ -60,6 +60,17 @@ in
     #auto bracket pairs
     plugins.mini-pairs.enable = true;
 
+    #completions
+    plugins.cmp = {
+      enable = true;
+      autoEnableSources = true;
+      settings.sources = [
+    { name = "nvim_lsp"; }
+    { name = "path"; }
+    { name = "buffer"; }
+  ];
+    };
+
     opts = {
       number = true;
       relativenumber = true;
@@ -67,12 +78,11 @@ in
       cursorline = true;
       scrolloff = 10;
       breakindent = true;
-      signcolumn = 'yes';
+      signcolumn = true;
       list = true;
-      listchars = { tab = '» ', trail = '·', nbsp = '␣' };
       termguicolors = true;
-      mouse = 'a';
-      clipboard = 'unnamedplus';
+      mouse = "a";
+      clipboard = "unnamedplus";
       smoothscroll = true;
       smartindent = true;
       wrap = false;
