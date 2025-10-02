@@ -16,5 +16,18 @@ in
   programs.nixvim = {
     enable = true;
     colorschemes.catppuccin.enable = true;
+    
+    plugins.treesitter = {
+      enable = true;
+      autoLoad = true;
+      settings = {
+	auto_install = true;
+	highlight.enable = true;
+	indent.enable = true;
+      };
     };
+
+
+    };
+
 }
