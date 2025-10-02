@@ -81,6 +81,7 @@ in
       scrolloff = 10;
       breakindent = true;
       list = true;
+      signcolumn = "yes";
       termguicolors = true;
       mouse = "a";
       clipboard = "unnamedplus";
