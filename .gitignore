@@ -7,3 +7,5 @@
 !.config/nixos/
 !.config/nixos/**
 .config/nixos/hardware-configuration.nix
+!.config/nvim/
+!.config/nvim/**
