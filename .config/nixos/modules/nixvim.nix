@@ -14,7 +14,7 @@ in
   ];
 
   programs.nixvim = {
-    enabled = true;
+    enable = true;
     colorschemes.catppuccin.enable = true;
     };
 }
