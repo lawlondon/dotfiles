@@ -11,3 +11,5 @@
 !.config/nvim/**
 !.config/niri/
 !.config/niri/**
+!.config/hypr/
+!.config/hypr/**

@@ -22,7 +22,7 @@
       };
 
   environment.systemPackages = with pkgs; [
-  dolphin
+  kdePackages.dolphin
   mako
   kdePackages.qtwayland
   libsForQt5.qt5.qtwayland
