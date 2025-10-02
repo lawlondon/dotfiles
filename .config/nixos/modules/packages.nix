@@ -9,7 +9,7 @@
 
   environment.systemPackages = with pkgs; [
     kitty
-    neovim
+#    neovim
     google-chrome
     qbittorrent
     gh #github cli
