@@ -32,7 +32,9 @@ in
       };
     };
 
+    plugins.web-devicons = { enable = true; };
 
-    };
+
+};
 
 }
