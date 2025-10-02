@@ -15,14 +15,17 @@ in
 
   programs.nixvim = {
     enable = true;
+
+    #theme Monokai Pro
     colorschemes.monokai-pro = {
 	enable = true;
 	settings = {
 	    filter = "octagon";
 	    devicons = true; };
 	};
-    
-    plugins.treesitter = {
+   
+   #syntax highlighting
+  plugins.treesitter = {
       enable = true;
       autoLoad = true;
       settings = {
@@ -31,7 +34,51 @@ in
       };
     };
 
-    plugins.web-devicons = { enable = true; };
+    #devicons (needed because monokai pro has devicons
+    plugins.web-devicons.enable = true;
+
+    #breadcrumbs (file path at top of screen)
+    plugins.dropbar.enable = true;
+
+    #provides a map for commenting lines and blocks
+    plugins.comment.enable = true;
+
+    #lsp
+    lsp.servers = {
+      nixd.enable = true;
+      lua_ls.enable = true;
+    };
+
+    plugins.lspconfig.enable = true;
+    plugins.lsp-format.enable = true;
+    plugins.lsp-lines.enable = true;
+    plugins.lspkind.enable = true;
+
+    #status bar
+    plugins.lualine.enable = true;
+
+    #auto bracket pairs
+    plugins.mini-pairs.enable = true;
+
+    opts = {
+      number = true;
+      relativenumber = true;
+      shiftwidth = 4;
+      cursorline = true;
+      scrolloff = 10;
+      breakindent = true;
+      signcolumn = 'yes';
+      list = true;
+      listchars = { tab = '» ', trail = '·', nbsp = '␣' };
+      termguicolors = true;
+      mouse = 'a';
+      clipboard = 'unnamedplus';
+      smoothscroll = true;
+      smartindent = true;
+      wrap = false;
+      smartcase = true;
+      ignorecase = true;
+    };
 
 
 };
