@@ -28,6 +28,7 @@
   libsForQt5.qt5.qtwayland
   hyprpaper
   hyprcursor
+  fuzzel
   ];
 
 }
