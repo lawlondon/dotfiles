@@ -13,5 +13,8 @@ in
     nixvim.nixosModules.nixvim
   ];
 
-  programs.nixvim.enable = true;
+  programs.nixvim = {
+    enabled = true;
+    colorschemes.catppuccin.enable = true;
+    };
 }
