@@ -11,37 +11,23 @@
     variant = "";
   };
 
-
   services.displayManager.sddm.enable = true; #sddm
   services.displayManager.sddm.wayland.enable = true; #enable wayland support sddm
   services.displayManager.sddm.settings.General.DisplayServer = "wayland"; #default to wayland session
 
-  services.desktopManager.plasma6.enable = true; #enable KDE;
+  # services.desktopManager.plasma6.enable = true; #enable KDE;
 
-  #NIRI
-  programs.niri.enable = true;
-
-  environment.systemPackages = with pkgs; [
-    mako
-    nautilus
-    kdePackages.polkit-kde-agent-1
-    xwayland-satellite
-    fuzzel
-  ];
-
-  xdg.portal = {
+  programs.hyprland = {
 	  enable = true;
-	  wlr.enable = true;
-	  extraPortals = [
-	     pkgs.xdg-desktop-portal-wlr
-	     pkgs.xdg-desktop-portal-gtk
-	     pkgs.xdg-desktop-portal-gnome
-	  ];
       };
 
-  services.gnome.gnome-keyring.enable = true;
-  security.polkit.enable = true;
-
-  programs.xwayland.enable = true;
+  environment.systemPackages = with pkgs; [
+  dolphin
+  mako
+  kdePackages.qtwayland
+  libsForQt5.qt5.qtwayland
+  hyprpaper
+  hyprcursor
+  ];
 
 }
