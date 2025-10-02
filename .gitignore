@@ -9,3 +9,5 @@
 .config/nixos/hardware-configuration.nix
 !.config/nvim/
 !.config/nvim/**
+!.config/niri/
+!.config/niri/**
