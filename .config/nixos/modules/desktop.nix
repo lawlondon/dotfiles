@@ -25,8 +25,8 @@
     mako
     nautilus
     kdePackages.polkit-kde-agent-1
-    kdePackages.xwaylandvideobridge
     xwayland-satellite
+    fuzzel
   ];
 
   xdg.portal = {
