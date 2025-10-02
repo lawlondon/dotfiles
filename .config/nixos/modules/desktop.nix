@@ -23,6 +23,10 @@
 
   environment.systemPackages = with pkgs; [
     mako
+    nautilus
+    kdePackages.polkit-kde-agent-1
+    kdePackages.xwaylandvideobridge
+    xwayland-satellite
   ];
 
   xdg.portal = {
@@ -34,5 +38,10 @@
 	     pkgs.xdg-desktop-portal-gnome
 	  ];
       };
+
+  services.gnome.gnome-keyring.enable = true;
+  security.polkit.enable = true;
+
+  programs.xwayland.enable = true;
 
 }
