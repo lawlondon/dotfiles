@@ -51,7 +51,6 @@ in
 
     plugins.lspconfig.enable = true;
     plugins.lsp-format.enable = true;
-    plugins.lsp-lines.enable = true;
     plugins.lspkind.enable = true;
 
     #status bar

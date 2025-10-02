@@ -18,4 +18,21 @@
 
   services.desktopManager.plasma6.enable = true; #enable KDE;
 
+  #NIRI
+  programs.niri.enable = true;
+
+  environment.systemPackages = with pkgs; [
+    mako
+  ];
+
+  xdg.portal = {
+	  enable = true;
+	  wlr.enable = true;
+	  extraPortals = [
+	     pkgs.xdg-desktop-portal-wlr
+	     pkgs.xdg-desktop-portal-gtk 
+	     pkgs.xdg-desktop-portal-gnome
+	  ];
+      };
+
 }
