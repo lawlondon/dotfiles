@@ -32,6 +32,9 @@
 
   services.xserver.videoDrivers = [ "amdgpu" ];
 
+# NTFS
+  boot.supportedFilesystems = [ "ntfs" ];
+
   # Networking
   networking.hostName = "london";
   networking.networkmanager.enable = true;

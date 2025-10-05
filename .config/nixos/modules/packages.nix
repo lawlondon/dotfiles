@@ -9,7 +9,6 @@
 
   environment.systemPackages = with pkgs; [
     kitty
-#    neovim
     google-chrome
     qbittorrent
     gh #github cli
@@ -20,6 +19,9 @@
     discord
     spotify
     lf
+    vlc
+    btop-rocm
+    superfile
   ];
 
 }
