@@ -13,3 +13,6 @@
 !.config/niri/**
 !.config/hypr/
 !.config/hypr/**
+!.config/waybar/
+!.config/waybar/**
+
